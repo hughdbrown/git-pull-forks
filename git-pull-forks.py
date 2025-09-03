@@ -91,10 +91,6 @@ def main(name):
         if fork and (parts := fork.split(' ')) and name == parts[3]
     ]
 
-    project_set = {project for _, project in paths}
-    print(sorted(project_set))
-    assert len(project_set) == 1
-
     for user, project in paths:
         p = Path(f"~/workspace/forks/{project}/{user}/").expanduser()
         print(f"# {'-' * 30}")
