@@ -7,3 +7,14 @@ Each fork of the common repository will be in its own folder: `~/workspace/forks
 
 # Operation
 The python script generates a bash script that can be reviewed and then pipped into bash for execution.
+
+# Example
+```
+> ./git-pull-forks.py live-bootcamp-project > examples/live-bootcamp-project.sh
+> head -4 examples/live-bootcamp-project.sh
+# ------------------------------
+(mkdir -p '/Users/hughbrown/workspace/forks/live-bootcamp-project/aldass' && cd '/Users/hughbrown/workspace/forks/live-bootcamp-project/aldass' && git clone https://github.com/aldass/live-bootcamp-project.git)
+# ------------------------------
+(mkdir -p '/Users/hughbrown/workspace/forks/live-bootcamp-project/paragoner1' && cd '/Users/hughbrown/workspace/forks/live-bootcamp-project/paragoner1' && git clone https://github.com/paragoner1/live-bootcamp-project.git)
+> bash examples/live-bootcamp-project.sh
+```
