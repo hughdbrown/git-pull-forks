@@ -10,7 +10,7 @@ The python script generates a bash script that can be reviewed and then pipped i
 
 # Example
 ```
-> ./git-pull-forks.py live-bootcamp-project > examples/live-bootcamp-project.sh
+> uv run ./git-pull-forks.py -r live-bootcamp-project -o letsgetrusty > examples/live-bootcamp-project.sh
 > head -4 examples/live-bootcamp-project.sh
 # ------------------------------
 (mkdir -p '/Users/hughbrown/workspace/forks/live-bootcamp-project/aldass' && cd '/Users/hughbrown/workspace/forks/live-bootcamp-project/aldass' && git clone https://github.com/aldass/live-bootcamp-project.git)
